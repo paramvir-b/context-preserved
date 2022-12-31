@@ -1,0 +1,20 @@
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Editor related #
+######################
+.*.swp
+Session.vim
+Sessionx.vim
+.idea/
+*.iml
+
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build
