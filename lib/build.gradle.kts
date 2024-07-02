@@ -23,7 +23,7 @@ repositories {
 }
 
 group = "com.rokoder.concurrency"
-version = "1.0.0"
+version = "1.0.1"
 val artifactName = "context-preserved"
 
 java {
@@ -105,9 +105,6 @@ tasks.javadoc {
 }
 
 dependencies {
-    // This dependency is exported to consumers, that is to say found on their compile classpath.
-    api("org.apache.commons:commons-math3:3.6.1")
-
     // This dependency is used internally, and not exposed to consumers on their own compile classpath.
     implementation("com.google.code.findbugs:jsr305:3.0.2")
 
@@ -123,7 +120,7 @@ dependencies {
 }
 
 checkstyle {
-    toolVersion = "10.12.4"
+    toolVersion = "10.4"
     isIgnoreFailures = false // Added this so that the tasks fail if CheckStyle errors are present.
 }
 
